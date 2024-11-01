@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Catálogo de Flores
+    </ion-title> 
+    
+
+    <!-- Navegación y botón del carrito -->
+    <ion-buttons slot="end" style="gap: 16px;"> <!-- Espacio entre botones -->
+      
+      <ion-button [routerLink]="['/mapa']" style="margin-right: 16px;">
+        <ion-icon name="location-outline" style="margin-right: 8px;"></ion-icon>mapa
+      </ion-button>
+
+      
+      <ion-button href="/ramos" style="margin-right: 16px;">
+        <ion-icon name="flower-outline" style="margin-right: 8px;"></ion-icon>Ramos</ion-button>
+
+      <!-- Ícono del carrito -->
+      <ion-button href="/carrito" style="margin-right: 16px;">
+        <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<!-- termino del codigo del navegador  -->
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" size-md="6" size-lg="4" *ngFor="let flower of flowers" style="margin-bottom: 16px;">
+        <ion-card class="flower-card">
+          <ion-card-header>
+            <ion-card-title>{{ flower.name }}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <div class="card-container">
+              <ion-thumbnail class="image-container">
+                <img [src]="flower.image" alt="{{ flower.name }}" class="flower-image">
+              </ion-thumbnail>
+              <div class="description-container">
+                <p>{{ flower.description }}</p>
+                <p>Cantidad: {{ flower.quantity }}</p>
+                <div class="button-container">
+                  <ion-button (click)="increaseQuantity(flower)" fill="outline" color="pink">+</ion-button>
+                  <ion-button (click)="decreaseQuantity(flower)" fill="outline" color="purple">-</ion-button>
+                </div>
+              </div>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

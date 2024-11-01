@@ -1,0 +1,87 @@
+ion-header {
+    background-color: #FC0D81; /* Color de fondo del header */
+  }
+
+  ion-card img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho de la tarjeta */
+    height: 200px; /* Establece una altura fija para todas las imágenes */
+    object-fit: cover; /* Recorta la imagen para que ocupe todo el espacio sin deformarse */
+    border-radius: 10px 10px 0 0; /* Aplica el mismo radio en las esquinas superiores de la tarjeta */
+}
+
+  
+  ion-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: black; /* Color blanco para el título */
+  }
+  
+  ion-content {
+    --background: #fbff00; /* Fondo rosa bugambilia para el contenido */
+  }
+  
+  ion-card {
+    background-color: #f57faa; /* Fondo rosa más claro para las tarjetas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+  
+  ion-card-header {
+    text-align: center;
+    background-color: #F5B0C9; /* Un tono más oscuro para el encabezado */
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  ion-card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  ion-card-subtitle {
+    font-size: 1rem;
+    color: #888;
+  }
+  
+  ion-card-content {
+    padding: 15px;
+    text-align: center;
+  
+    p {
+      color: #050000;
+      font-size: 0.9rem;
+    }
+  
+    ion-button {
+      --border-radius: 20px;
+      margin-top: 10px;
+      font-size: 0.8rem;
+      padding: 0.5rem 1rem;
+      --padding-start: 8px;
+      --padding-end: 8px;
+      
+    }
+  }
+  
+  ion-footer {
+    background-color: #f1f1f1;
+  
+    ion-toolbar {
+      padding: 10px;
+    }
+  
+    ion-button {
+      --border-radius: 25px;
+      font-size: 1rem;
+      
+    }
+  }
+  

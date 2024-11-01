@@ -1,0 +1,66 @@
+ion-content {
+  --background: #fcec0d; 
+}
+
+ion-col {
+  padding: 0 40px; 
+}
+
+.flower-card {
+  background-color: #faa0ae;
+  height: 250px; 
+  width: 100%; 
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row-reverse; /* Invertir la dirección para poner la imagen a la izquierda */
+  align-items: center; /* Cambiado para alinear verticalmente el contenido */
+  height: 100%;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  margin-left: 16px; /* Cambiar a margen izquierdo para separar la imagen */
+  overflow: hidden;
+}
+
+ion-card img {
+  width: 100%; /* Hace que la imagen ocupe todo el ancho de la tarjeta */
+  height: 200px; /* Establece una altura fija para todas las imágenes */
+  object-fit: cover; /* Recorta la imagen para que ocupe todo el espacio sin deformarse */
+  border-radius: 10px 10px 0 0; /* Aplica el mismo radio en las esquinas superiores de la tarjeta */
+}
+
+.description-container {
+  flex: 2;
+  padding: 8px;
+  display: flex; /* Añadido para utilizar flexbox */
+  flex-direction: column; /* Organiza el contenido en una columna */
+  justify-content: center; /* Centra verticalmente el contenido */
+  align-items: center; /* Centra horizontalmente el contenido */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el botón */
+  margin-top: auto; /* Empuja el botón hacia abajo */
+  padding: 8px; /* Añade un poco de espacio alrededor del botón */
+}
+
+ion-card-title {
+  font-family: 'Georgia', serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #FC150D;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
